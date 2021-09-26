@@ -1,195 +1,241 @@
+<html>
+
 <head>
-        <meta charset="utf-8">
-        <title>Opdarcht week 2</title>
-        <style>
-            h1{
-                font-size: 22px;
-                margin-top: 20px;
-                margin-left: 50%;
-            }
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device=width, initial-scale=1">
+    <title>Solution Responsive Layout week2</title>
+    <style>
+        h1 {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 50px;
+        }
+
+        .container1 {
+            margin-top: 50px;
+            margin-right: 5px;
+            position: relative;
+
+        }
+
+        .container2 {
+            margin-top: 50px;
+            margin-right: 5px;
+            position: relative;
+            left: 2px;
 
 
 
-            #container{
-                margin-top: 30px;  
 
-           
-            }  
-            
-            .box1{
-                position: absolute;
-                top:50px;
-                left:320px;
-                box-sizing: border-box;
-                color: brown;
-                font-size: 20px;
-                border: 2px solid;
-                width: max-content;
-                background: aliceblue;
+        }
 
-             
-            }
+        .container3 {
+            margin-top: 50px;
+            margin-right: 5px;
+            position: relative;
+            left: 4px;
 
-            .box2{
-                position: absolute;
-                top:50px;
-                left: 350px;
-                box-sizing: border-box;
-                color: rgb(211, 213, 223);
-                font-size: 20px;
-                border: 2px solid;
-                width: max-content;
-                background: black;
-  
 
-            }
+        }
 
-            .box3{
-                position: absolute;
-                top:50px;
-                left: 350px;
-                box-sizing: border-box;
-                color: chartreuse;
-                font-size: 20px;
-                border: 2px solid;
-                width: max-content;
-                background:indianred ;
-                
-            }
+        .box1 {
+            border: 2px solid black;
+            width: 33%;
+            background: gray;
+            color: ivory;
+            overflow: none;
+            float: left;
+            box-sizing: border-box;
 
-            p{
-                border: 2px solid;
-                background: grey;
-                color:white;
-                box-sizing: border-box;
-                float: left;
+        }
+
+        .box11 {
+            border: 2px solid red;
+            box-sizing: border-box;
+            background: burlywood;
+            color: black;
+            font-size: 20px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            overflow: none;
+            width: 100px;
+            text-align: center;
+            padding: 5px;
+            float: right;
+            margin-top: 0px;
+            position: relative;
+        }
+
+        .content1 {
+            position: relative;
+            margin-top: 50px;
+            padding: 5px;
+            font-size: 18px;
+
+        }
+
+        .box2 {
+            border: 2px solid black;
+            width: 33%;
+            background: gray;
+            color: ivory;
+            overflow: none;
+            float: left;
+            box-sizing: border-box;
+
+        }
+
+        .box22 {
+
+            border: 2px solid red;
+            box-sizing: border-box;
+            background: burlywood;
+            color: black;
+            font-size: 20px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            overflow: none;
+            width: 100px;
+            text-align: center;
+            padding: 5px;
+            float: right;
+            margin-top: 0px;
+            position: relative;
+        }
+
+        .content2 {
+            position: relative;
+            margin-top: 50px;
+            padding: 5px;
+            font-size: 18px;
+
+        }
+
+        .box3 {
+            border: 2px solid black;
+            width: 33%;
+            background: gray;
+            color: ivory;
+            overflow: none;
+            float: left;
+            box-sizing: border-box;
+
+
+        }
+
+        .box33 {
+
+            border: 2px solid red;
+            box-sizing: border-box;
+            background: burlywood;
+            color: black;
+            font-size: 20px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            overflow: none;
+            width: 100px;
+            text-align: center;
+            padding: 5px;
+            float: right;
+            margin-top: 0px;
+            position: relative;
+        }
+
+        .content3 {
+            position: relative;
+            margin-top: 50px;
+            padding: 5px;
+            font-size: 18px;
+
+        }
+
+
+        @media(min-width:992px) {
+            .box1 {
                 width: 33%;
-                padding: 50px 10px 10px 10px;
-               
-                
-                        
+            }
+
+            .box2 {
+                width: 33%;
+
+            }
+
+            .box3 {
+                width: 33%;
             }
 
 
-            #p1{
-                border: 2px solid white;
-  
+        }
+
+
+
+        @media(min-width:768px) and (max-width:991px) {
+            .box1 {
+                width: 50%;
             }
 
-            #p2{
-                border:2px solid white;
-  
+            .box2 {
+                width: 50%;
             }
 
-            #p3{
-                border: 2px solid white;
-      
-            }
-
-            @media(min-width:992px){
-                #p1{width: 33%;}
-                #p2{width: 33%;}
-                #p3{width: 33%;}
-                .box1{
-                     right:auto;
-                     top:80px;
-                     
-                
-                }
-                .box2{
-                     right:auto;
-                     top:80px;
-                     margin-left: 400px;
-                     
-                }
-                .box3{
-                     right:auto;
-                     top:80px;
-                     margin-left: 800px;
-                     
-                }
-            }
-            
-
-         
-            @media(min-width:768px) and (max-width:991px){
-                #p1{width: 50%;}
-                #p2{width: 50%;}
-                #p3{width:100%;}
-                .box1{
-                     right:auto;
-                     top:80px;
-                     margin-left: 20px;
-                   
-                
-                }
-                .box2{
-                     right:auto;
-                     top:80px;
-                     margin-left: 430px;
-                    
-                }
-                .box3{
-                     right:auto;
-                     top:250px;
-                     margin-left: 425px;
-                    
-                }
-            }
-
-           
-            @media(max-width:767px){
-                #p1{width:100%;}
-                #p2{width: 100%;}
-                #p3{width: 100%;}
-                .box1{
-                     right:auto;
-                     top:80px; 
-                     margin-left: 80px;
-                
-                }
-                .box2{
-                     right:auto;
-                     top:250px;
-                     margin-left: 80px;
-                     
-                }
-                .box3{
-                     right:auto;
-                     top: 420px;
-                     margin-left: 80px;
-                     
-                }
+            .box3 {
+                width: 100%;
+                margin-right: 0px;
+                margin-top: 20px;
             }
 
 
-         
-
-        </style>
-        
-    </head>
-    <body>
-
-        <h1>Our Menu</h1>
+        }
 
 
-        <div class="container">
-        <div class ="content1" > <div class="box1">Chicken</div>  
-            <p id="p1" > Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                 Aliquam adipisci iusto at aut. Quia, pariatur ex nesciunt corporis magni aliquid expedita,
-                 iste minima sequi quis voluptate tempora porro commodi. Adipisci?</p> </div>        
-        <div class="content2">  <div class="box2">Beef</div> 
-               <p id="p2">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                 Voluptatibus necessitatibus a ab illo blanditiis fugit officiis facilis eveniet ullam ratione eos, 
-                eius cum totam tenetur debitis odio labore sed exercitationem.</p></div> 
+        @media(max-width:767px) {
+            .box1 {
+                width: 100%;
+                margin-top: 20px;
+            }
 
-        <div class="content3">  <div class="box3">Sushi</div> 
-            <p id="p3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, assumenda quas, 
-                quia quaerat placeat nisi optio recusandae dolorum molestiae alias culpa error velit suscipit magni libero numquam.
-                Similique, debitis temporibus?</p></div> 
+            .box2 {
+                width: 100%;
+                margin-top: 20px;
+            }
+
+            .box3 {
+                width: 100%;
+                margin-top: 20px;
+                left: 20px;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1> Our Menu</h1>
+    <div class="container1">
+        <div class="box1">
+            <p class="box11">Chicken</p>
+            <p class="content1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat vitae quisquam quasi
+                soluta sequi illum consectetur, quos id maiores quae explicabo repellat hic asperiores amet dignissimos
+                quia placeat alias consequatur?</p>
         </div>
+    </div>
+    <div class="container2">
+        <div class="box2">
+            <p class="box22">Beef</p>
+            <p class="content2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo corrupti similique atque
+                suscipit sunt assumenda laudantium temporibus ad eum at odio nemo earum tempora illum, consequuntur
+                harum ipsa quos aliquid?</p>
 
-    </body>
 
+        </div>
+    </div>
+
+    <div class="container3">
+        <div class="box3">
+            <p class="box33">Sushi</p>
+            <p class="content3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quae officia animi velit necessitatibus dicta est cumque placeat eaque vitae, hic provident expedita
+                dolor, nobis aliquid autem aliquam voluptates accusamus eum.</p>
+        </div>
+    </div>
+</body>
 
 </html>
